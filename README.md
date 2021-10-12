@@ -1,0 +1,1 @@
+<a href="https://brekot.github.io/yrs-webpack/index.html">Главная страница</a>

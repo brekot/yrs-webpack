@@ -1,0 +1,22 @@
+.line-dot {
+    position: relative;
+
+    &_left:before,
+    &_right:after {
+        content: "";
+        height: 8px;
+        width: 8px;
+        background-color: var(--color1);
+        position: absolute;
+        transform: rotate(45deg);
+        top: -3px;
+        right: 0;
+        transition: .5s;
+    }
+    &_left:before {
+        left: 0;
+    }
+    &_right:after {
+        right: 0;
+    }
+}

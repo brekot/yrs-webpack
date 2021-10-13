@@ -1,0 +1,112 @@
+.block-50 {
+    background: var(--color1) url(img/bg.50.jpg) no-repeat center / cover;
+    height: 1320px;
+    position: relative;
+
+    &__top {
+        position: absolute;
+        right: 50%;
+        margin: 0 -612px 0 0;
+        top: 60px;
+        z-index: 3;
+
+        &-date {
+            font-size: 210px;
+            letter-spacing: -.01em;
+            line-height: 1;
+            -webkit-text-stroke-color: var(--red);
+
+            &-e {
+                font-size: 160px;
+            }
+        }
+        &-sub {
+            font-size: 54px;
+            color: var(--red);
+            line-height: 41px;
+            position: absolute;
+            left: 66px;
+            top: 131px;
+            width: 615px;
+        }
+        &-text {
+            margin: 7px 0 0 66px;
+            max-width: 600px;
+            color: var(--bg-grey);
+        }
+    }
+    &__bottom {
+        position: absolute;
+        z-index: 2;
+        left: 50%;
+        top: 976px;
+        width: 960px;
+        margin: 0 0 0 -619px;
+        background-color: var(--color1);
+        padding: 21px 335px 45px 103px;
+
+        &-date {
+            font-size: 70px;
+            letter-spacing: -.01em;
+            color: var(--red);
+            line-height: 1;
+            margin: 0 0 11px -9px;
+        }
+        &-sub {
+            font-size: 32px;
+            color: var(--red);
+            margin: 0 0 14px;
+        }
+        &-text {
+            color: var(--bg-grey);
+        }
+    }
+    &__bg {
+
+        &-one {
+            background-color: var(--red);
+            height: 507px;
+            width: 520px;
+            position: absolute;
+            left: 50%;
+            margin: 0 0 0 -630px;
+            top: 0;
+            z-index: 1;
+        }
+        &-two {
+            position: absolute;
+            background-color: var(--red);
+            height: 368px;
+            width: 1130px;
+            right: 50%;
+            margin: 0 -818px 0 0;
+            bottom: -58px;
+            bottom: 0;
+            z-index: 1;
+        }
+    }
+    &__img {
+
+        &1 {
+            position: absolute;
+            left: 50%;
+            margin: 0 0 0 -672px;
+            top: 84px;
+            z-index: 2;
+        }
+        &2 {
+            position: absolute;
+            left: 50%;
+            top: 784px;
+            z-index: 3;
+            margin: 0 0 0 -312px;
+        }
+        &3 {
+            position: absolute;
+            right: 50%;
+            top: 847px;
+            z-index: 3;
+            margin: 0 -782px 0 0;
+        }
+    }
+}

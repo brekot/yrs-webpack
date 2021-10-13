@@ -1,0 +1,18 @@
+.main-header {
+    position: absolute;
+    z-index: 60;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 44px 180px 0 107px;
+
+    &__logo {
+        margin: 0 12px 0 0;
+    }
+    &__share {
+        margin: -14px 0 0;
+    }
+}

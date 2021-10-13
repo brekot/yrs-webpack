@@ -1,6 +1,19 @@
 :root {
     --black: #000;
     --white: #FFF;
+    --red: #ac3734;
+
+    --bg-grey: #303030;
+
+    --transparent: rgba(0, 0, 0, 0);
+
+    --opacity1: rgba(255, 255, 255, .5);
+    --opacity2: rgba(48, 48, 49, .5);
+
+    --color1: #F9EFE3;
+    --color2: rgba(249, 239, 227, .5);
+
+    --grey1: #F4F4F4;
 }
 
 $grid-breakpoints: (

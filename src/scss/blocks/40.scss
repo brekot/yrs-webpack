@@ -1,0 +1,83 @@
+.block-40 {
+    background: var(--red) url(img/bg.40.jpg) no-repeat right top;
+    height: 1060px;
+    position: relative;
+
+    &__top {
+        position: absolute;
+        left: 50%;
+        margin: 0 0 0 -588px;
+        top: 37px;
+
+        &-date {
+            font-size: 210px;
+            letter-spacing: -.01em;
+            line-height: 1;
+            -webkit-text-stroke-color: var(--color2);
+
+            &-e {
+                font-size: 160px;
+            }
+        }
+        &-sub {
+            font-size: 54px;
+            color: var(--color1);
+            line-height: 41px;
+            position: absolute;
+            left: 70px;
+            top: 132px;
+            max-width: 436px;
+        }
+        &-text {
+            margin: 23px 0 0 70px;
+            max-width: 570px;
+        }
+    }
+    &__bottom {
+        position: absolute;
+        right: 50%;
+        top: 615px;
+        width: 465px;
+        margin: 0 -743px 0 0;
+
+        &-date {
+            font-size: 70px;
+            letter-spacing: -.01em;
+            color: var(--color1);
+            line-height: 1;
+            margin: 0 0 15px -9px;
+        }
+        &-sub {
+            font-size: 32px;
+            color: var(--color1);
+            margin: 0 0 18px;
+        }
+    }
+    &__img1 {
+        position: absolute;
+        left: 50%;
+        margin: 0 0 0 167px;
+        top: 64px;
+        max-width: 33vw;
+    }
+    &__img2 {
+        position: absolute;
+        right: 50%;
+        top: 697px;
+        margin: 0 95px 0 0;
+        max-width: 40vw;
+    }
+    &__img3 {
+        position: absolute;
+        left: 50%;
+        top: 504px;
+        margin: 0 0 0 -82px;
+    }
+    &__pech {
+        top: 18vw;
+        max-width: 15vw;
+        left: 50%;
+        margin: 0 0 0 23%;
+        position: absolute;
+    }
+}

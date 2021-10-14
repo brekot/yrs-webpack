@@ -1,7 +1,7 @@
 .block-60 {
 
     &-top {
-        background: url(img/bg.60.one.jpg) no-repeat center top;
+        background: url(img/bg.60.one.jpg) no-repeat center top / cover;
         height: 850px;
         position: relative;
 
@@ -117,6 +117,7 @@
             right: 0;
             bottom: 167px;
             transform: translate(0, 50%);
+            min-width: 100%;
         }
     }
 }

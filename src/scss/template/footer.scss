@@ -1,0 +1,25 @@
+.main-footer {
+    position: absolute;
+    z-index: 10;
+    bottom: 303px;
+    left: 0;
+    right: 0;
+
+    &__links {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 129px;
+    }
+    &__link {
+        margin: 0 50px;
+    }
+    &__logos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__logo {
+        height: 60px;
+        margin: 0 5px;
+    }
+}

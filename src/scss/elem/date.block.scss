@@ -1,0 +1,20 @@
+.date-block {
+    position: absolute;
+
+    &__date {
+        font-size: 210px;
+        letter-spacing: -.01em;
+        line-height: 1;
+        color: var(--transparent);
+        -webkit-text-stroke: 1px var(--white);
+
+        &-e {
+            font-size: 160px;
+        }
+    }
+    &__sub {
+        font-size: 54px;
+        line-height: 41px;
+        position: absolute;
+    }
+}

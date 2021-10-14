@@ -4,28 +4,17 @@
     position: relative;
 
     &__top {
-        position: absolute;
         left: 50%;
         margin: 0 0 0 -588px;
-        top: 37px;
+        top: 38px;
 
         &-date {
-            font-size: 210px;
-            letter-spacing: -.01em;
-            line-height: 1;
             -webkit-text-stroke-color: var(--color2);
-
-            &-e {
-                font-size: 160px;
-            }
         }
         &-sub {
-            font-size: 54px;
             color: var(--color1);
-            line-height: 41px;
-            position: absolute;
             left: 70px;
-            top: 132px;
+            top: 131px;
             max-width: 436px;
         }
         &-text {
@@ -35,10 +24,11 @@
     }
     &__bottom {
         position: absolute;
-        right: 50%;
+        left: 50%;
         top: 615px;
         width: 465px;
-        margin: 0 -743px 0 0;
+        margin: 0 0 0 277px;
+        max-width: 26vw;
 
         &-date {
             font-size: 70px;

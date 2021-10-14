@@ -1,0 +1,33 @@
+.to-top {
+    font-size: 17px;
+    letter-spacing: -.01em;
+    color: var(--grey1);
+    position: relative;
+    padding: 0 39px 0 0;
+
+    &__str {
+        border-top: 2px solid var(--white);
+        border-right: 2px solid var(--white);
+        height: 16px;
+        width: 16px;
+        position: absolute;
+        transform: rotate(-45deg);
+        right: 6px;
+        top: 0;
+        transition: .5s;
+
+        &:before {
+            content: "";
+            width: 2px;
+            height: 20px;
+            background-color: var(--white);
+            position: absolute;
+            transform: rotate(45deg);
+            right: 6px;
+            top: -3px;
+        }
+    }
+    &:hover &__str {
+        top: -15px;
+    }
+}

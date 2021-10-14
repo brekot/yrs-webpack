@@ -1,22 +1,30 @@
 // Основное
-@import "./main/fonts"; // Шрифты
-@import "./main/variables"; // Переменные
-@import "./main/grid"; // Сетка
-@import "./main/reboot"; // Сброс стилей
-
-// Библиотеки
-//@import "./lib/photobox";
+@import "./main/fonts"; 
+@import "./main/variables";
+@import "./main/grid";
+@import "./main/reboot";
 
 // Общие элементы
 @import "./elem/elems";
 @import "./elem/share.block";
 @import "./elem/line.dot";
+@import "./elem/date.block";
+@import "./elem/to.top";
 
 // Шаблон
 @import "./template/header";
 @import "./template/nav";
+@import "./template/main";
+@import "./template/footer";
 
 // Блоки
 @import "./blocks/start";
 @import "./blocks/40";
 @import "./blocks/50";
+@import "./blocks/60";
+@import "./blocks/70";
+@import "./blocks/80";
+@import "./blocks/90";
+@import "./blocks/00";
+@import "./blocks/10";
+@import "./blocks/20";

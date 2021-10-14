@@ -1,0 +1,87 @@
+.block-00 {
+    height: 1300px;
+    background-color: var(--color1);
+    position: relative;
+
+    &__block {
+        top: 79px;
+        left: 50%;
+        margin: 0 0 0 69px;
+    }
+    &__date {
+        -webkit-text-stroke-color: var(--red);
+    }
+    &__sub {
+        color: var(--red);
+        top: 135px;
+        left: 75px;
+    }
+    &__text {
+        color: var(--bg-grey);
+        margin: -15px 0 0 75px;
+        width: 545px;
+        max-width: 37vw;
+    }
+    &__box {
+        position: absolute;
+        top: 785px;
+        z-index: 2;
+        left: 50%;
+        width: 448px;
+        margin: 0 0 0 -518px;
+    }
+    &__from {
+        font-size: 70px;
+        letter-spacing: -.01em;
+        color: var(--red);
+        line-height: 1;
+        margin: 0 0 2px -7px;
+    }
+    &__name {
+        color: var(--red);
+        font-size: 32px;
+        line-height: 1;
+        margin: 0 0 10px;
+    }
+    &__txt {
+        color: var(--bg-grey);
+    }
+    &__img {
+
+        &1 {
+            position: absolute;
+            right: 50%;
+            margin: 0 31px 0 0;
+            top: 133px;
+            z-index: 1;
+        }
+        &2 {
+            position: absolute;
+            left: 50%;
+            top: 426px;
+            transform: translate(-50%, 0);
+            z-index: 3;
+        }
+        &3 {
+            position: absolute;
+            top: 488px;
+            left: 50%;
+            margin: 0 0 0 241px;
+            z-index: 3;
+        }
+        &4 {
+            position: absolute;
+            top: 780px;
+            z-index: 2;
+            left: 50%;
+            margin: 0 0 0 32px;
+        }
+    }
+    &__bg {
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        transform: translateY(50%);
+        margin: 0 0 24px;
+    }
+}

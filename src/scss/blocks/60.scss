@@ -1,0 +1,122 @@
+.block-60 {
+
+    &-top {
+        background: url(img/bg.60.one.jpg) no-repeat center top;
+        height: 850px;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: var(--bg-grey);
+            opacity: .5;
+        }
+        &__block {
+            right: 50%;
+            margin: 0 -467px 0 0;
+            top: 446px;
+            z-index: 2;
+        }
+        &__date {
+            -webkit-text-stroke-color: var(--white);
+        }
+        &__sub {
+            color: var(--white);
+            left: 55px;
+            top: 133px;
+            max-width: 455px;
+        }
+        &__text {
+            margin: 25px 0 0 55px;
+            max-width: 585px;
+            color: var(--color1);
+        }
+    }
+    &-bottom {
+        position: relative;
+        height: 1200px;
+        background-color: var(--bg-grey);
+
+        &__img {
+
+            &1 {
+                position: absolute;
+                left: 50%;
+                top: -192px;
+                margin: 0 0 0 -594px;
+                z-index: 4;
+            }
+            &2 {
+                position: absolute;
+                left: 50%;
+                top: 10px;
+                margin: 0 0 0 -351px;
+                z-index: 4;
+            }
+            &3 {
+                position: absolute;
+                z-index: 3;
+                left: 50%;
+                margin: 0 0 0 -603px;
+                top: 172px;
+            }
+            &4 {
+                position: absolute;
+                z-index: 4;
+                left: 50%;
+                top: 464px;
+                margin: 0 0 0 -164px;
+            }
+        }
+        &__block {
+            position: absolute;
+            top: 111px;
+            left: 50%;
+            width: 515px;
+            margin: 0 0 0 165px;
+            z-index: 2;
+            max-width: 35vw;
+        }
+        &__name {
+            font-size: 70px;
+            line-height: 56px;
+            letter-spacing: -.01em;
+            color: var(--red);
+            margin: 0 0 28px;
+        }
+        &__sub {
+            font-size: 32px;
+            color: var(--white);
+            margin: 0 0 24px;
+        }
+        &__text {
+            font-size: 15px;
+            line-height: 24px;
+            color: var(--color1);
+
+            &-red {
+                background-color: var(--red);
+            }
+        }
+        &__set {
+            position: absolute;
+            z-index: 2;
+            top: 305px;
+            left: 50%;
+            margin: 0 0 0 -703px;
+        }
+        &__bg {
+            position: absolute;
+            z-index: 1;
+            left: 0;
+            right: 0;
+            bottom: 167px;
+            transform: translate(0, 50%);
+        }
+    }
+}

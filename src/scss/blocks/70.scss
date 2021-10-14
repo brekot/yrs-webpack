@@ -1,0 +1,104 @@
+.block-70 {
+    background-color: var(--color1);
+    height: 1424px;
+    position: relative;
+
+    &__block {
+        z-index: 2;
+        top: 242px;
+        left: 50%;
+        transform: translate(-50%);
+        text-align: center;
+        width: 800px;
+    }
+    &__date {
+        -webkit-text-stroke-color: var(--black);
+    }
+    &__sub {
+        color: var(--red);
+        position: relative;
+        margin: -5px 0 12px;
+    }
+    &__text {
+        color: var(--bg-grey);
+        width: 715px;
+        margin: auto;
+    }
+    &__box {
+        position: absolute;
+        top: 892px;
+        left: 50%;
+        width: 525px;
+        margin: 0 0 0 -512px;
+        z-index: 3;
+    }
+    &__name {
+        font-size: 32px;
+        color: var(--red);
+        margin: 0 0 15px;
+    }
+    &__txt {
+        color: var(--bg-grey);
+    }
+    &__bg {
+
+        &-one {
+            position: absolute;
+            top: 533px;
+            z-index: 2;
+            left: 50%;
+            margin: 0 0 0 -628px;
+        }
+        &-two {
+            position: absolute;
+            bottom: 116px;
+            right: 50%;
+            margin: 0 -819px 0 0;
+            z-index: 2;
+        }
+        &-three {
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            width: 624px;
+            height: 356px;
+            background-color: var(--bg-grey);
+            left: 50%;
+            margin: 0 0 0 33px;
+            max-width: 33vw;
+        }
+    }
+    &__img {
+
+        &1 {
+            position: absolute;
+            z-index: 4;
+            left: 50%;
+            top: 548px;
+            margin: 0 0 0 358px;
+            max-width: 24vw;
+        }
+        &2 {
+            position: absolute;
+            left: 50%;
+            top: 777px;
+            z-index: 3;
+            margin: 0 0 0 6.2vw;
+            max-width: 39vw;
+        }
+        &3 {
+            position: absolute;
+            bottom: -50px;
+            z-index: 4;
+            left: 50%;
+            margin: 0 0 0 -359px;
+        }
+        &4 {
+            bottom: 29px;
+            position: absolute;
+            z-index: 3;
+            right: 50%;
+            margin: 0 -37.8vw 0 0;
+        }
+    }
+}

@@ -4,16 +4,19 @@
         font-size: 17px;
         letter-spacing: -.01em;
         color: var(--grey1);
-        display: flex;
-        align-items: center;
+        position: relative;
+        padding: 0 34px 0 0;
     }
     &__str {
         border-top: 2px solid var(--white);
         border-right: 2px solid var(--white);
         height: 20px;
         width: 20px;
-        margin: 0 0 0 14px;
-        position: relative;
+        margin: 0;
+        position: absolute;
+        right: 3px;
+        top: 2px;
+        transition: .5s;
 
         &:before {
             content: "";
@@ -25,5 +28,9 @@
             right: 8px;
             top: -4px;
         }
+    }
+    &__link:hover &__str {
+        top: -15px;
+        right: -15px;
     }
 }

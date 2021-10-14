@@ -49,4 +49,12 @@
     &_black &__str:before {
         background-color: var(--bg-grey);
     }
+
+    @media (max-width:1650px)
+    {
+        & {
+            margin: 0;
+            left: 50px;
+        }
+    }
 }

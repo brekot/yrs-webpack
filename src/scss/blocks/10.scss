@@ -1,0 +1,104 @@
+.block-10 {
+    height: 1266px;
+    position: relative;
+    background-color: var(--bg-grey);
+
+    &__block {
+        z-index: 2;
+        right: 50%;
+        width: 665px;
+        margin: 0 37px 0 0;
+        top: 242px;
+        max-width: 37vw;
+    }
+    &__date {
+        -webkit-text-stroke-color: var(--red);
+    }
+    &__sub {
+        color: var(--color1);
+        top: 130px;
+        left: 35px;
+
+        &-two {
+            margin: 0 0 0 18px;
+        }
+    }
+    &__text {
+        color: var(--color1);
+        margin: 21px 0 0 55px;
+
+        &-red {
+            background-color: var(--red);
+        }
+    }
+    &__box {
+        position: absolute;
+        top: 827px;
+        left: 50%;
+        margin: 0 0 0 21.2vw;
+        width: 370px;
+    }
+    &__icon {
+        position: absolute;
+        top: -114px;
+        left: 0;
+    }
+    &__name {
+        font-size: 32px;
+        line-height: 29px;
+        margin: 0 0 12px;
+    }
+    &__img {
+
+        &1 {
+            position: absolute;
+            z-index: 1;
+            top: 83px;
+            left: 50%;
+            margin: 0 0 0 -115px;
+        }
+        &2 {
+            position: absolute;
+            z-index: 1;
+            left: 50%;
+            top: 248px;
+            margin: 0 0 0 18vw;
+        }
+        &3 {
+            position: absolute;
+            z-index: 2;
+            top: 377px;
+            left: 50%;
+            margin: 0 0 0 37px;
+        }
+        &4 {
+            position: absolute;
+            z-index: 2;
+            left: 50%;
+            top: 446px;
+            margin: 0 0 0 31vw;
+        }
+        &5 {
+            position: absolute;
+            z-index: 1;
+            top: 744px;
+            left: 50%;
+            margin: 0 0 0 -92px;
+            max-width: 26vw;
+        }
+        &6 {
+            position: absolute;
+            z-index: 1;
+            top: 881px;
+            right: 50%;
+            margin: 0 110px 0 0;
+        }
+        &7 {
+            position: absolute;
+            top: 972px;
+            left: 50%;
+            margin: 0 0 0 -171px;
+            z-index: 2;
+        }
+    }
+}

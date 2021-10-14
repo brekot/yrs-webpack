@@ -1,0 +1,38 @@
+.block-20 {
+    background: var(--red) url(img/bg.20.jpg) no-repeat top center / contain;
+    height: 1600px;
+
+    &__block {
+        text-align: center;
+        padding: 470px 0 0;
+    }
+    &__title {
+        font-size: 144px;
+        line-height: 95px;
+        letter-spacing: -.08em;
+        -webkit-text-stroke: 1px var(--color1);
+        color: var(--transparent);
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    &__line {
+        height: 1px;
+        width: 432px;
+        background-color: var(--color1);
+        margin: 67px auto 20px;
+    }
+    &__text {
+        font-size: 32px;
+        line-height: 41px;
+        color: var(--color1);
+        max-width: 950px;
+        margin: 0 auto 24px;
+    }
+    &__dot {
+        height: 8px;
+        width: 8px;
+        background-color: var(--color1);
+        transform: rotate(45deg);
+        margin: auto;
+    }
+}

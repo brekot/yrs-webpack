@@ -9,6 +9,8 @@
         line-height: 115px;
         max-width: 1200px;
         margin: auto;
+        -webkit-text-stroke: 1px var(--white);
+        color: var(--transparent);
 
         &-count {
             font-size: 164px;

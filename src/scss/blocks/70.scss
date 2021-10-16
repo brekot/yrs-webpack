@@ -146,4 +146,88 @@
             }
         }
     }
+    @media (max-width:991px)
+    {
+        & {
+            height: auto;
+
+            &__block {
+                top: -39px;
+                width: 100%;
+                margin: 0 0 165px;
+            }
+            &__sub {
+                margin: -12px auto 21px;
+                width: 300px;
+            }
+            &__text {
+                width: auto;
+                padding: 0 20px;
+            }
+            &__box {
+                position: relative;
+                top: 0;
+                margin: 0;
+                left: 0;
+                width: auto;
+                padding: 0 16px 25px;
+            }
+            &__name {
+                line-height: 1;
+            }
+            &__bg {
+
+                &-one {
+                    top: 264px;
+                    margin: 0 0 0 -13px;
+                    transform: translate(-50%, 0);
+                    max-width: 200%;
+                    height: 280px;
+                }
+                &-two {
+                    position: relative;
+                    bottom: 0;
+                    margin: 0;
+                    right: 0;
+                    left: 0;
+                    display: block;
+                    height: 446px;
+                }
+                &-three {
+                    display: none;
+                }
+            }
+            &__img {
+
+                &1 {
+                    margin: 0;
+                    bottom: 285px;
+                    top: auto;
+                    max-width: 320px;
+                    transform: translate(-50%, 0);
+                }
+                &2 {
+                    top: auto;
+                    bottom: 60px;
+                    margin: 0;
+                    max-width: 200%;
+                    transform: translate(-50%, 0);
+                    height: 280px;
+                }
+                &3 {
+                    margin: 0 0 0 -17px;
+                    bottom: -54px;
+                    top: auto;
+                    max-width: 320px;
+                    transform: translate(-50%, 0);
+                }
+                &4 {
+                    bottom: 32px;
+                    margin: 0 -225px -29px 0;
+                    width: 151px;
+                    z-index: 4;
+                }
+            }
+        }
+    }
 }

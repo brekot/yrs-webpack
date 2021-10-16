@@ -90,4 +90,42 @@
             margin: 0 0 0 -7px;
         }
     }
+    @media (max-width:991px)
+    {
+        & {
+            padding: 136px 0 0;
+            height: 667px;
+
+            &__title {
+                font-size: 54px;
+                line-height: 58px;
+                max-width: 600px;
+
+                &-count {
+                    font-size: 64px;
+                    line-height: 58px;
+                }
+            }
+            &__line {
+                width: 274px;
+                margin: 20px auto 15px;
+            }
+            &__text {
+                font-size: 16px;
+                line-height: 23px;
+                width: 350px;
+                margin: auto;
+
+                br {
+                    display: none;
+                }
+            }
+            &__dot {
+                top: 533px;
+            }
+            &__str {
+                top: 614px;
+            }
+        }
+    }
 }

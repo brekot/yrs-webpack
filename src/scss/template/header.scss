@@ -22,4 +22,17 @@
             padding: 44px 50px 0;
         }
     }
+    @media (max-width:991px)
+    {
+        & {
+            padding: 20px 25px 0;
+
+            &__logo {
+                max-height: 50px;
+            }
+            &__share {
+                display: none;
+            }
+        }
+    }
 }

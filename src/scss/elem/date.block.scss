@@ -28,4 +28,18 @@
             line-height: 1;
         }
     }
+    @media (max-width:991px)
+    {
+        &__date {
+            font-size: 140px;
+
+            &-e {
+                font-size: 100px;
+            }
+        }
+        &__sub {
+            font-size: 26px;
+            line-height: 28px;
+        }
+    }
 }

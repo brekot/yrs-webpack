@@ -162,4 +162,98 @@
             }
         }
     }
+    @media (max-width:991px)
+    {
+        &-top {
+            height: auto;
+
+            &__block {
+                position: relative;
+                margin: 0;
+                padding: 70px 14px 62px;
+                right: auto;
+                top: 0;
+            }
+            &__sub {
+                color: var(--white);
+                left: 15px;
+                top: 194px;
+                max-width: 455px;
+            }
+            &__text {
+                margin: 49px 11px 0 0;
+            }
+        }
+        &-bottom {
+            height: auto;
+
+            &__block {
+                position: relative;
+                left: auto;
+                width: auto;
+                top: 0;
+                margin: 0;
+                max-width: 100%;
+                padding: 113px 16px 235px;
+            }
+            &__name {
+                font-size: 32px;
+                line-height: 1;
+                letter-spacing: 0;
+                margin: 0 0 16px;
+            }
+            &__sub {
+                font-size: 26px;
+                margin: 0 0 17px;
+            }
+            &__text {
+                font-size: 16px;
+                line-height: 20px;
+                max-width: 323px;
+                letter-spacing: -.01em;
+            }
+            &__img {
+
+                &1 {
+                    position: absolute;
+                    margin: 0 0 0 -178px;
+                    width: 274px;
+                    top: -182px;
+                }
+                &2 {
+                    margin: 0 0 0 -89px;
+                    top: -86px;
+                    width: 268px;
+                }
+                &3 {
+                    display: block;
+                    position: relative;
+                    margin: 131px 0 0;
+                    max-width: 200%;
+                    height: 280px;
+                    top: 0;
+                    transform: translate(-50%, 0);
+                }
+                &4 {
+                    top: 208px;
+                    width: 300px;
+                }
+            }
+            &__set {
+                top: 180px;
+                margin: 0 0 0 -187px;
+                width: 300px;
+                opacity: .5;
+            }
+            &__bg {
+                position: absolute;
+                z-index: 1;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                transform: none;
+                min-width: 100%;
+            }
+        }
+    }
 }

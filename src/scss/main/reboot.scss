@@ -23,9 +23,16 @@ body {
     max-width: 100%;
 	overflow-x: hidden;
 
-/* 	background-image: url(img/tmp.jpg);
+ 	background-image: url(img/temp.png);
     background-repeat: no-repeat;
-    background-position: top center; */
+    background-position: top center;
+
+	@media (max-width:991px)
+	{
+		& {
+			line-height: 20px;
+		}
+	}
 }
 
 hr {

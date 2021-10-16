@@ -166,4 +166,101 @@
             }
         }
     }
+    @media (max-width:991px)
+    {
+        & {
+            background-image: none;
+            padding: 107px 0 0;
+            height: auto;
+        
+            &__block {
+                position: relative;
+                margin: -5px 0 464px;
+                padding: 0 14px 0 15px;
+                top: 0;
+                left: 0;
+            }
+            &__sub {
+                top: 93px;
+                left: 15px;
+            }
+            &__text {
+                width: 100%;
+                margin: 18px 0 0 0;
+            }
+            &__box {
+                position: relative;
+                top: 0;
+                margin: 0 0 32px;
+                left: 0;
+                right: 0;
+                text-align: center;
+                padding: 0 28px;
+            }
+            &__circle {
+                position: absolute;
+                top: -143px;
+                left: 50%;
+                transform: translate(-50%, 0);
+                height: 126px;
+                z-index: 4;
+            }
+            &__name {
+                margin: 0 0 22px;
+            }
+            &-face {
+                position: static;
+                flex-wrap: wrap;
+                transform: none;
+                padding: 0 0 34px;
+
+                &__item {
+                    width: calc(100% / 3);
+                }
+                &__pict {
+                    width: 138px;
+                    height: 138px;
+                    margin: 0 0 10px;
+                }
+                &__name {
+                    font-size: 20px;
+                    line-height: 22px;
+                }
+                &__item:nth-last-child(n + 4) {
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+                &__item:nth-last-child(n + 4) &__pict {
+                    margin: 10px 0 -10px;
+                }
+            }
+            &__img {
+
+                &1 {
+                    position: relative;
+                    display: block;
+                    top: 0;
+                    height: 280px;
+                    margin: 0;
+                    transform: translate(-50%, 0);
+                }
+                &2 {
+                    margin: 0 -24px 0 0;
+                    top: 805px;
+                    height: 281px;
+                }
+                &3 {
+                    margin: 0 -173px 0 0;
+                    top: 769px;
+                    height: 270px;
+                }
+                &4 {
+                    width: 270px;
+                    margin: 0 -145px 0 0;
+                    z-index: 2;
+                    top: 960px;
+                }
+            }
+        }
+    }
 }

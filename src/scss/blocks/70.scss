@@ -10,6 +10,8 @@
         transform: translate(-50%);
         text-align: center;
         width: 800px;
+        position: relative;
+        z-index: 3;
     }
     &__date {
         -webkit-text-stroke-color: var(--black);
@@ -99,6 +101,49 @@
             z-index: 3;
             right: 50%;
             margin: 0 -37.8vw 0 0;
+        }
+    }
+
+    @media (min-width:992px) AND (max-width:1300px)
+    {
+        & {
+            height: 1150px;
+
+            &__block {
+                top: 170px;
+            }
+            &__box {
+                top: 690px;
+                width: 44vw;
+                margin: 0 0 0 -36vw;
+            }
+            &__bg {
+
+                &-one {
+                    top: 333px;
+                }
+                &-two {
+                    display: none;
+                }
+                &-three {
+                    display: none;
+                }
+            }
+            &__img {
+
+                &1 {
+                    top: 490px;
+                    margin: 0 0 0 110px;
+                    max-width: 350px;
+                }
+                &2 {
+                    margin: 0 0 0 12vw;
+                    max-width: 34vw;
+                }
+                &3 {
+                    max-width: 350px;
+                }
+            }
         }
     }
 }

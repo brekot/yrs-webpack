@@ -57,4 +57,10 @@
             left: 50px;
         }
     }
+    @media (min-width:992px) AND (max-width:1300px)
+    {
+        & {
+            left: 20px;
+        }
+    }
 }

@@ -85,4 +85,49 @@
         margin: 0 0 24px;
         min-width: 100%;
     }
+
+    @media (min-width:992px) AND (max-width:1300px)
+    {
+        & {
+            height: 1175px;
+
+            &__block {
+                top: 0;
+                margin: 0;
+            }
+            &__sub {
+                top: 110px;
+            }
+            &__text {
+                max-width: 41vw;
+            }
+            &__box {
+                top: 700px;
+                margin: 0 0 0 -365px;
+            }
+            &__img {
+
+                &1 {
+                    margin: 0 -35px 0 0;
+                    top: 180px;
+                    max-width: 400px;
+                }
+                &2 {
+                    max-height: 350px;
+                    top: 350px;
+                    margin: 0 0 0 -30px;
+                }
+                &3 {
+                    top: 685px;
+                    margin: 0 0 0 130px;
+                    max-width: 350px;
+                }
+                &4 {
+                    top: 500px;
+                    margin: 0 0 0 55px;
+                    max-width: 350px;
+                }
+            }
+        }
+    }
 }

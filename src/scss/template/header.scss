@@ -15,4 +15,11 @@
     &__share {
         margin: -14px 0 0;
     }
+
+    @media (min-width:992px) AND (max-width:1300px)
+    {
+        & {
+            padding: 44px 50px 0;
+        }
+    }
 }

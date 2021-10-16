@@ -77,4 +77,32 @@
             z-index: 1;
         }
     }
+
+    @media (min-width:992px) AND (max-width:1300px)
+    {
+        &__block {
+            top: 160px;
+            margin: 0 0 0 -400px;
+        }
+        &__sub {
+            width: 350px;
+            top: 110px;
+        }
+        &__img {
+
+            &1 {
+                max-width: 350px;
+            }
+            &2 {
+                top: 510px;
+                margin: 0;
+                max-width: 43vw;
+            }
+        }
+        &-bottom__sep {
+            height: 100%;
+            top: 0;
+            width: 20px;
+        }
+    }
 }

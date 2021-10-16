@@ -17,4 +17,15 @@
         line-height: 41px;
         position: absolute;
     }
+
+    @media (min-width:992px) AND (max-width:1300px)
+    {
+        &__date {
+            font-size: 170px;
+        }
+        &__sub {
+            font-size: 34px;
+            line-height: 1;
+        }
+    }
 }

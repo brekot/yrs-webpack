@@ -45,7 +45,6 @@
         height: 42px;
         width: 42px;
         position: absolute;
-        top: 925px;
         left: 50%;
         transform: rotate(45deg) translate(-50%);
         top: 1023px;
@@ -62,6 +61,33 @@
             left: 50%;
             transform: translate(-50%, -50%);
             margin: -4px 0 0 -4px;
+        }
+    }
+
+    @media (min-width:992px) AND (max-width:1300px)
+    {
+        &__title {
+            font-size: 98px;
+            line-height: 90px;
+        }
+        &__text {
+            font-size: 34px;
+            line-height: 38px;
+            width: 820px;
+        }
+        &__dot {
+            height: 8px;
+            width: 8px;
+            background-color: var(--color1);
+            top: 810px;
+        }
+        &__str {
+            border: 1px solid var(--color1);
+            height: 42px;
+            width: 42px;
+            top: 925px;
+            top: 940px;
+            margin: 0 0 0 -7px;
         }
     }
 }

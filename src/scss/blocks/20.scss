@@ -1,6 +1,6 @@
 .block-20 {
     background: var(--red) url(img/bg.20.jpg) no-repeat top center / contain;
-    height: 1600px;
+    height: 1400px;
 
     &__block {
         text-align: center;
@@ -34,5 +34,16 @@
         background-color: var(--color1);
         transform: rotate(45deg);
         margin: auto;
+    }
+
+    @media (min-width:992px) AND (max-width:1300px)
+    {
+        &__title {
+            font-size: 110px;
+        }
+        &__text {
+            font-size: 27px;
+            max-width: 800px;
+        }
     }
 }

@@ -120,4 +120,46 @@
             min-width: 100%;
         }
     }
+
+    @media (min-width:992px) AND (max-width:1300px)
+    {
+        &-top {
+
+            &__block {
+                top: 346px;
+            }
+            &__sub {
+                top: 110px;
+            }
+        }
+        &-bottom {
+            height: 1020px;
+
+            &__block {
+                margin: 0 0 0 130px;
+            }
+            &__img {
+
+                &1 {
+                    top: -130px;
+                    margin: 0 0 0 -393px;
+                    max-width: 350px;
+                }
+                &2 {
+                    top: 25px;
+                    margin: 0 0 0 -300px;
+                    max-width: 350px;
+                }
+                &3 {
+                    margin: 0 0 0 -370px;
+                    max-width: 450px;
+                }
+                &4 {
+                    top: 400px;
+                    margin: 0 0 0 -240px;
+                    max-width: 350px;
+                }
+            }
+        }
+    }
 }

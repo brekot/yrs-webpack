@@ -26,8 +26,7 @@
     @media (max-width:991px)
     {
         & {
-            position: static;
-            background-color: var(--red);
+            bottom: 0;
             padding: 15px 0 45px;
         }
         &__links {

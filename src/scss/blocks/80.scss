@@ -175,10 +175,11 @@
         
             &__block {
                 position: relative;
-                margin: -5px 0 464px;
+                margin: -5px auto 464px;
                 padding: 0 14px 0 15px;
                 top: 0;
                 left: 0;
+                max-width: 600px;
             }
             &__sub {
                 top: 93px;
@@ -191,7 +192,7 @@
             &__box {
                 position: relative;
                 top: 0;
-                margin: 0 0 32px;
+                margin: 0 auto 32px;
                 left: 0;
                 right: 0;
                 text-align: center;
@@ -213,6 +214,8 @@
                 flex-wrap: wrap;
                 transform: none;
                 padding: 0 0 34px;
+                max-width: 500px;
+                margin: auto;
 
                 &__item {
                     width: calc(100% / 3);

@@ -50,7 +50,7 @@
     {
         & {
             height: auto;
-            padding: 0 0 50px;
+            padding: 0 0 290px;
 
             &__block {
                 padding: 108px 11px 0;
@@ -67,7 +67,8 @@
             &__text {
                 font-size: 16px;
                 line-height: 23px;
-                margin: 0 0 15px;
+                margin: 0 auto 15px;
+                max-width: 350px;
             }
         }
     }

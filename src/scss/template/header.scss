@@ -15,6 +15,9 @@
     &__share {
         margin: -14px 0 0;
     }
+    &__btn {
+        display: none;
+    }
 
     @media (min-width:992px) AND (max-width:1300px)
     {
@@ -32,6 +35,9 @@
             }
             &__share {
                 display: none;
+            }
+            &__btn {
+                display: block;
             }
         }
     }

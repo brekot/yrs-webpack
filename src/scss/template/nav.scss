@@ -1,55 +1,63 @@
 .main-nav {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    z-index: 50;
-    left: 50%;
-    margin: 0 0 0 -782px;
-    top: 50%;
-    transform: translate(0, -50%);
-    transition: 1s;
 
-    &_hide {
-        opacity: 0;
-        pointer-events: none;
-    }
-    &__link {
-        font-size: 23px;
-        line-height: 61px;
-        letter-spacing: -.01em;
-        color: var(--opacity1);
+    @media (min-width:992px)
+    {
+        position: fixed;
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        z-index: 50;
+        left: 50%;
+        margin: 0 0 0 -782px;
+        top: 50%;
+        transform: translate(0, -50%);
+        transition: 1s;
 
-        &_active {
-            font-size: 32px;
-            color: var(--white);
+        &_hide {
+            opacity: 0;
+            pointer-events: none;
+        }
+        &__link {
+            font-size: 23px;
+            line-height: 61px;
+            letter-spacing: -.01em;
+            color: var(--opacity1);
+            display: flex;
+            align-items: center;
+
+            &_active {
+                font-size: 32px;
+                color: var(--white);
+            }
+        }
+        &__str {
+            margin: 0 0 0 15px;
+            width: 110px;
+            height: 1px;
+            background-color: var(--white);
+            display: none;
+            transition: .5;
+        }
+        &__link_active &__str {
+            display: block;
+        }
+        &_black &__link {
+            color: var(--opacity2);
+        }
+        &_black &__link_active {
+            color: var(--bg-grey);
+        }
+        &_black &__str {
+            background-color: var(--bg-grey);
+        }
+        &_black &__str:before {
+            background-color: var(--bg-grey);
+        }
+        &__name,
+        &__share,
+        &__close {
+            display: none;
         }
     }
-    &__str {
-        margin: 0 0 0 15px;
-        width: 110px;
-        height: 1px;
-        background-color: var(--white);
-        display: none;
-        transition: .5;
-    }
-    &__link_active &__str {
-        display: block;
-    }
-    &_black &__link {
-        color: var(--opacity2);
-    }
-    &_black &__link_active {
-        color: var(--bg-grey);
-    }
-    &_black &__str {
-        background-color: var(--bg-grey);
-    }
-    &_black &__str:before {
-        background-color: var(--bg-grey);
-    }
-
     @media (max-width:1650px)
     {
         & {
@@ -66,7 +74,80 @@
     @media (max-width:991px)
     {
         & {
-            display: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            width: 100%;
+            top: 0;
+            bottom: 0;
+            background-color: var(--red);
+            padding: 15px;
+            transition: .5s;
+            left: -100%;
+
+            &_open {
+                left: 0;
+            }
+            &__link {
+                font-size: 34px;
+                line-height: 66px;
+                letter-spacing: -.01em;
+                color: var(--color1);
+                display: flex;
+                align-items: center;
+
+                &:nth-child(2n) {
+                    padding: 0 0 0 70px;
+                }
+                &-e {
+                    font-size: 28px;
+                }
+            }
+            &__str {
+                display: none;
+            }
+            &__name {
+                font-size: 14px;
+                line-height: 15px;
+                margin: 0 0 0 10px;
+            }
+            &__share {
+                margin: 15px 0 0;
+                height: 70px;
+                opacity: 0;
+            }
+            &__close {
+                position: absolute;
+                top: 30px;
+                right: 20px;
+                height: 30px;
+                width: 30px;
+
+                &:before,
+                &:after {
+                    content: "";
+                    height: 100%;
+                    width: 2px;
+                    background-color: var(--color1);
+                    position: absolute;
+                    left: 50%;
+                }
+                &:before {
+                    transform: rotate(45deg);
+                }
+                &:after {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+    @media (min-width:576px) AND (max-width:991px)
+    {
+        & {
+            padding: 15px 45px;
         }
     }
 }

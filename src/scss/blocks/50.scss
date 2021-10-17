@@ -177,10 +177,11 @@
 
             &__top {
                 position: relative;
-                margin: 0;
+                margin: auto;
                 top: -28px;
                 right: auto;
                 padding: 0 12px 33px;
+                max-width: 600px;
 
                 &-sub {
                     color: var(--bg-grey);
@@ -194,9 +195,10 @@
             }
             &__bottom {
                 position: static;
-                margin: 0;
+                margin: auto;
                 width: 100%;
                 padding: 7px 15px 70px 24px;
+                max-width: 600px;
 
                 &-date {
                     margin: 0 0 7px -9px;
@@ -255,6 +257,25 @@
                     display: block;
                 }
             }
+        }
+    }
+    @media (min-width:441px) AND (max-width:767px)
+    {
+        &__img1,
+        &__img3 {
+            width: 100%;
+            height: auto;
+            max-height: 1000%;
+            max-width: 1000%;
+        }
+    }
+    @media (min-width:768px) AND (max-width:991px)
+    {
+        &__bg-two {
+            background-color: var(--transparent);
+        }
+        &__img2 {
+            margin: -101px 0 0 200px;
         }
     }
 }

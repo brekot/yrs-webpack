@@ -140,8 +140,9 @@
                 position: relative;
                 top: 0;
                 left: 0;
-                margin: 0 0 50px;
+                margin: 0 auto 50px;
                 padding: 0 15px;
+                max-width: 600px;
             }
             &__date {
                 line-height: .8;
@@ -157,9 +158,10 @@
             }
             &__box {
                 position: static;
-                margin: 0;
+                margin: auto;
                 width: 100%;
                 padding: 3px 34px 32px 17px;
+                max-width: 600px;
             }
             &__from {
                 font-size: 70px;
@@ -215,6 +217,16 @@
             &__bg {
                 margin: 0 0 -5px;
             }
+        }
+    }
+    @media (min-width:441px) AND (max-width:767px)
+    {
+        &__img1,
+        &__img4 {
+            width: 100%;
+            height: auto;
+            max-height: 1000%;
+            max-width: 1000%;
         }
     }
 }

@@ -10,11 +10,11 @@ $(function() {
         topMenu = $(".main-nav"),
         topMenuHeight = topMenu.outerHeight()+15,
         // All list items
-        menuItems = topMenu.find("a"),
+        menuItems = topMenu.find(".main-nav__link"),
         // Anchors corresponding to menu items
         scrollItems = menuItems.map(function(){
-        var item = $($(this).attr("href"));
-        if (item.length) { return item; }
+            var item = $($(this).attr("href"));
+            if (item.length) { return item; }
         });
 
     // Bind click handler to menu items
@@ -27,6 +27,8 @@ $(function() {
         $('html, body').stop().animate({ 
             scrollTop: offsetTop
         }, 1000);
+
+        $('.main-nav').removeClass('main-nav_open');
 
         e.preventDefault();
     });
@@ -67,5 +69,20 @@ $(function() {
     $('.to-top').on('click', function(){
 
         $('html, body').animate({scrollTop: '0px'}, 2000);
+    });
+
+    $('.to-next').on('click', function(){
+
+        $('html, body').animate({scrollTop: $('#id40').offset().top}, 1000);
+    });
+
+    $('.main-nav-btn').on('click', function(){
+
+        $('.main-nav').addClass('main-nav_open');
+    });
+
+    $('.main-nav__close').on('click', function(){
+
+        $('.main-nav').removeClass('main-nav_open');
     });
 });

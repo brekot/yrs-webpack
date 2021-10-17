@@ -114,9 +114,12 @@
             background-size: cover;
 
             &__top {
-                position: static;
-                margin: 0;
-                padding: 17px 12px 27px 12px;
+                position: relative;
+                margin: auto;
+                padding: 17px 12px 27px;
+                left: auto;
+                top: auto;
+                max-width: 600px;
 
                 &-sub {
                     top: 103px;
@@ -128,11 +131,14 @@
                 }
             }
             &__bottom {
-                position: static;
+                position: relative;
                 width: 100%;
                 max-width: 100%;
-                margin: 0;
+                margin: auto;
                 padding: 10px 14px 15px;
+                left: auto;
+                top: auto;
+                max-width: 600px;
 
                 &-date {
                     margin: 0 0 5px -9px;
@@ -174,6 +180,15 @@
                 max-width: 141px;
                 margin: 0px 0 0 4%;
             }
+        }
+    }
+    @media (min-width:441px) AND (max-width:767px)
+    {
+        &__img1 {
+            width: 100%;
+            height: auto;
+            max-height: 1000%;
+            max-width: 1000%;
         }
     }
 }

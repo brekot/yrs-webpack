@@ -1,20 +1,14 @@
 {
-	"name": "nhl",
+	"name": "yrs",
 	"version": "1.0.0",
-	"description": "nhl",
+	"description": "yrs",
 	"main": "src/index.js",
 	"scripts": {
 		"start": "webpack-dev-server --mode development --open",
 		"build": "webpack --mode production && prettier --print-width=240 --tab-width=4 --parser html --write docs/*.html"
 	},
 	"dependencies": {
-		"@fancyapps/fancybox": "^3.5.7",
-		"air-datepicker": "^2.2.3",
-		"datatables.net": "^1.11.3",
-		"jquery": "^3.6.0",
-		"swiper": "^5.4.5",
-		"tippy.js": "^6.3.2",
-		"wow.js": "^1.2.2"
+		"jquery": "^3.6.0"
 	},
 	"devDependencies": {
 		"clean-webpack-plugin": "^2.0.1",

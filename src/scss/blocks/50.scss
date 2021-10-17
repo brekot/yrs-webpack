@@ -88,6 +88,7 @@
             top: 784px;
             z-index: 4;
             margin: 0 0 0 -312px;
+            z-index: 5;
         }
         &3 {
             position: absolute;
@@ -95,6 +96,7 @@
             top: 847px;
             z-index: 4;
             margin: 0 -782px 0 0;
+            z-index: 5;
         }
     }
 
@@ -235,11 +237,10 @@
                     height: 280px;
                 }
                 &2 {
-                    position: absolute;
                     top: auto;
                     margin: -151px 0 0;
-                    transform: translate(-50%, 0);
-                    z-index: 5;
+                    transform: translate(-50%);
+                    z-index: 6;
                     max-width: 310px;
                 }
                 &3 {

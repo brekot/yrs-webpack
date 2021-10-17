@@ -159,7 +159,8 @@
         }
         &-bottom {
             flex-direction: column;
-    
+            background-color: var(--red);
+
             &__img {
                 width: 100%;
                 margin: 21px 0 0;

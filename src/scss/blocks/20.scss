@@ -46,4 +46,29 @@
             max-width: 800px;
         }
     }
+    @media (max-width:991px)
+    {
+        & {
+            height: auto;
+            padding: 0 0 50px;
+
+            &__block {
+                padding: 108px 11px 0;
+            }
+            &__title {
+                font-size: 50px;
+                line-height: 1;
+                letter-spacing: -.04em;
+            }
+            &__line {
+                width: 274px;
+                margin: 24px auto 16px;
+            }
+            &__text {
+                font-size: 16px;
+                line-height: 23px;
+                margin: 0 0 15px;
+            }
+        }
+    }
 }

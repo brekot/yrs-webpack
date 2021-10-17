@@ -130,4 +130,91 @@
             }
         }
     }
+    @media (max-width:991px)
+    {
+        & {
+            height: auto;
+            padding: 0 0 157px;
+
+            &__block {
+                position: relative;
+                top: 0;
+                left: 0;
+                margin: 0 0 50px;
+                padding: 0 15px;
+            }
+            &__date {
+                line-height: .8;
+            }
+            &__sub {
+                color: var(--bg-grey);
+                top: 79px;
+                left: 18px;
+            }
+            &__text {
+                max-width: 100%;
+                margin: 7px 0 0;
+            }
+            &__box {
+                position: static;
+                margin: 0;
+                width: 100%;
+                padding: 3px 34px 32px 17px;
+            }
+            &__from {
+                font-size: 70px;
+                letter-spacing: -.01em;
+                color: var(--red);
+                line-height: 1;
+                margin: 0 0 4px 0;
+            }
+            &__name {
+                color: var(--red);
+                font-size: 26px;
+                line-height: 1;
+                margin: 0 0 14px;
+            }
+            &__img {
+
+                &1 {
+                    position: relative;
+                    top: 0;
+                    margin: 0;
+                    right: auto;
+                    transform: translate(-50%, 0);
+                    left: 50%;
+                    max-width: 200%;
+                    height: 280px;
+                    display: block;
+                }
+                &2 {
+                    max-height: 270px;
+                    top: auto;
+                    bottom: 5px;
+                    margin: 0 0 0 65px;
+                }
+                &3 {
+                    top: auto;
+                    bottom: 45px;
+                    width: 270px;
+                    left: auto;
+                    right: 50%;
+                    margin: 0 -34px 0 0;
+                }
+                &4 {
+                    position: relative;
+                    top: 0;
+                    margin: 0;
+                    max-width: 200%;
+                    height: 280px;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    display: block;
+                }
+            }
+            &__bg {
+                margin: 0 0 -5px;
+            }
+        }
+    }
 }

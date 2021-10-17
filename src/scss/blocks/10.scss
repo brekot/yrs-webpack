@@ -153,4 +153,92 @@
             }
         }
     }
+    @media (max-width:991px)
+    {
+        & {
+            height: auto;
+            padding: 0 0 97px;
+
+            &__block {
+                position: relative;
+                max-width: 100%;
+                right: auto;
+                left: 0;
+                top: -27px;
+                padding: 0 18px 16px 14px;
+            }
+            &__sub {
+                top: 92px;
+            }
+            &__text {
+                margin: 25px 0 0 0;
+            }
+            &__box {
+                position: relative;
+                top: 0;
+                margin: 18px 0 0;
+                left: 0;
+                width: 100%;
+                padding: 0 20px 0 16px;
+            }
+            &__icon {
+                height: 72px;
+                width: 72px;
+                top: -81px;
+                z-index: 3;
+                left: 16px;
+            }
+            &__name {
+                font-size: 26px;
+                padding: 0 33px 0 0;
+            }
+            &__img {
+
+                &1 {
+                    position: relative;
+                    top: 0;
+                    width: 310px;
+                    margin: 56px 0 0 -188px;
+                    display: block;
+                }
+                &2 {
+                    margin: -54px 0 0 -123px;
+                    position: relative;
+                    width: 310px;
+                    top: 0;
+                    display: block;
+                }
+                &3 {
+                    margin: 0 0 0 -7px;
+                    top: 60px;
+                    width: 262px;
+                }
+                &4 {
+                    top: 876px;
+                    height: 213px;
+                    margin: 0 0 0 -204px;
+                }
+                &5 {
+                    position: relative;
+                    top: -27px;
+                    max-width: 310px;
+                    display: block;
+                    margin: 0 0 0 253px;
+                    left: auto;
+                    right: 50%;
+                }
+                &6 {
+                    position: relative;
+                    top: 0;
+                    max-width: 310px;
+                    margin: 0 0 0 -186px;
+                    right: auto;
+                    left: 50%;
+                }
+                &7 {
+                    display: none;
+                }
+            }
+        }
+    }
 }

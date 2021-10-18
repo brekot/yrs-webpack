@@ -43,6 +43,7 @@
         &_black &__link {
             color: var(--opacity2);
         }
+        &_black &__link:hover,
         &_black &__link_active {
             color: var(--bg-grey);
         }
@@ -115,9 +116,9 @@
                 margin: 0 0 0 10px;
             }
             &__share {
-                margin: 15px 0 0;
-                height: 70px;
-                opacity: 0;
+                margin: 35px 0 0;
+                display: flex;
+                justify-content: center;
             }
             &__close {
                 position: absolute;

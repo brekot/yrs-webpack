@@ -85,4 +85,34 @@ $(function() {
 
         $('.main-nav').removeClass('main-nav_open');
     });
+
+    $('.share-block__link').on('click', function(){
+
+        $(this).next('.share-block-links').toggleClass('share-block-links_open');
+    });
+
+    $(document).on('mouseup', function (e){
+
+		var div = $(".share-block");
+
+		if (!div.is(e.target) && div.has(e.target).length === 0)
+        {
+			$('.share-block-links').removeClass('share-block-links_open');
+		}
+	});
+
+	$(".copy-link").on('click', function() {
+
+		var tmp = $("<input>");
+
+		$("body").append(tmp);
+
+		tmp.val(location.href).select();
+
+		document.execCommand("copy");
+
+		tmp.remove();
+
+		return false;
+	});
 });

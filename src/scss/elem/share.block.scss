@@ -1,4 +1,5 @@
 .share-block {
+    position: relative;
 
     &__link {
         font-size: 17px;
@@ -32,5 +33,133 @@
     &__link:hover &__str {
         top: -15px;
         right: -15px;
+    }
+
+    &-links {
+        display: flex;
+        background-color: var(--color1);
+        position: absolute;
+        bottom: -10px;
+        transform: translateY(100%);
+        right: 0;
+        width: 420px;
+        transition: .5s;
+        opacity: 0;
+        pointer-events: none;
+        z-index: 5;
+
+        &_open {
+            opacity: 1;
+            pointer-events: auto;
+        }
+        &__link {
+            height: 60px;
+            width: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            fill: var(--bg-grey);
+
+            &:hover {
+                fill: var(--red);
+                background-color: var(--color3);
+            }
+        }
+        &__icon {
+
+            &_fb {
+                height: 21px;
+                width: 21px;
+            }
+            &_wa {
+                height: 23px;
+                width: 23px;
+            }
+            &_tg {
+                height: 21px;
+                width: 24px;
+            }
+            &_vk {
+                height: 16px;
+                width: 26px;
+            }
+            &_tw {
+                height: 18px;
+                width: 22px;
+            }
+            &_ok {
+                height: 24px;
+                width: 14px;
+            }
+            &_copy {
+                height: 24px;
+                width: 24px;
+            }
+        }
+        &__name {
+            background-color: var(--color3);
+            font-size: 15px;
+            color: var(--red);
+            position: absolute;
+            height: 30px;
+            line-height: 30px;
+            padding: 0 15px;
+            bottom: 0;
+            transform: translate(0, 100%);
+            white-space: nowrap;
+            left: 0;
+            opacity: 0;
+            transition: .5s;
+            pointer-events: none;
+        }
+        &__link:nth-child(3) &__name,
+        &__link:nth-child(4) &__name,
+        &__link:nth-child(5) &__name {
+            transform: translate(-50%, 100%);
+            left: 50%;
+        }
+        &__link:nth-child(n + 6) &__name {
+            right: 0;
+            left: auto;
+        }
+        &__link:hover &__name {
+            opacity: 1;
+        }
+
+        &_top {
+            transform: translate(-50%, -100%);
+            bottom: auto;
+            top: -10px;
+            left: 50%;
+        }
+        &_top &__name {
+            top: 0;
+            transform: translate(0, -100%);
+        }
+        &_top &__link:nth-child(3) &__name,
+        &_top &__link:nth-child(4) &__name,
+        &_top &__link:nth-child(5) &__name {
+            top: 0;
+            transform: translate(-50%, -100%);
+        }
+
+        @media (max-width:991px)
+        {
+            & {
+                width: 350px;
+
+                &__link {
+                    height: 50px;
+                    width: 50px;
+                }
+                &__name {
+                    font-size: 12px;
+                    height: 24px;
+                    line-height: 24px;
+                    padding: 0 10px;
+                }
+            }
+        }
     }
 }

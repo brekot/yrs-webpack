@@ -19,3 +19,12 @@
 .overflow-hidden {
     overflow: hidden;
 }
+
+
+.animate-elem {
+    transition: 3s;
+}
+.animate-elem:not(.animate-active) {
+    transform: translate(-100%, 0);
+    opacity: 0;
+}

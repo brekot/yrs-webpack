@@ -8,6 +8,7 @@
 		"build": "webpack --mode production && prettier --print-width=240 --tab-width=4 --parser html --write docs/*.html"
 	},
 	"dependencies": {
+		"aos": "^2.3.4",
 		"jquery": "^3.6.0"
 	},
 	"devDependencies": {

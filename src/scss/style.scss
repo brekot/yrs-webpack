@@ -3,6 +3,9 @@
 @import "./main/variables";
 @import "./main/reboot";
 
+// Библиотеки
+@import '~aos/dist/aos.css';
+
 // Общие элементы
 @import "./elem/elems";
 @import "./elem/share.block";

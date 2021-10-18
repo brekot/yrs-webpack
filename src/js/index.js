@@ -79,11 +79,15 @@ $(function() {
     $('.main-nav-btn').on('click', function(){
 
         $('.main-nav').addClass('main-nav_open');
+
+        $('body').addClass('overflow-hidden');
     });
 
     $('.main-nav__close').on('click', function(){
 
         $('.main-nav').removeClass('main-nav_open');
+
+        $('body').removeClass('overflow-hidden');
     });
 
     $('.share-block__link').on('click', function(){

@@ -26,6 +26,14 @@
         position: relative;
         z-index: 3;
         padding: 247px 0 222px;
+        opacity: 0;
+        scale: .5;
+        transition: 3s;
+
+        &_show {
+            opacity: 1;
+            scale: 1;
+        }
     }
     &__title {
         font-size: 144px;

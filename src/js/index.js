@@ -1,45 +1,47 @@
 import $ from "jquery";
-import AOS from 'aos';
 
 window.jQuery = $;
 window.$ = $;
 
-AOS.init();
-
 import Motus from './lib/motus.web.js';
 
-[].forEach.call(document.getElementsByClassName('paralax-left'), function (el) {
+[].forEach.call(document.getElementsByClassName('speed-50'), function (el) {
 
     var animation = new Motus.Animation({
         $el: el,
         keyframes: {
-            40: {
-                left: {
-                    from: 0,
-                    to: 50,
+            30: {
+                translateY: {
+                    from: 50,
+                    to: 30,
                     unit: "%"
                 },
                 opacity: {
                     from: 0,
                     to: 1,
-                },
+                }
             },
             80: {
-                left: {
-                    to: 50,
+                translateY: {
+                    from: 30,
+                    to: 0,
                     unit: "%"
                 },
+                opacity: {
+                    from: 1,
+                    to: 1,
+                }
             },
             100: {
-                left: {
-                    from: 50,
-                    to: 100,
+                translateY: {
+                    from: 0,
+                    to: -20,
                     unit: "%"
                 },
                 opacity: {
                     from: 1,
                     to: 0,
-                },
+                }
             },
         }
     });
@@ -47,39 +49,98 @@ import Motus from './lib/motus.web.js';
     Motus.addAnimation(animation);
 });
 
-[].forEach.call(document.getElementsByClassName('paralax-right'), function (el) {
+[].forEach.call(document.getElementsByClassName('speed-100'), function (el) {
 
     var animation = new Motus.Animation({
         $el: el,
         keyframes: {
-            40: {
-                right: {
-                    from: 0,
-                    to: 50,
+            30: {
+                translateY: {
+                    from: 30,
+                    to: 0,
                     unit: "%"
                 },
                 opacity: {
                     from: 0,
                     to: 1,
-                },
+                }
             },
             80: {
-                right: {
-                    to: 50,
+                translateY: {
+                    from: 0,
+                    to: -20,
                     unit: "%"
                 },
+                opacity: {
+                    from: 1,
+                    to: 1,
+                }
             },
             100: {
-                right: {
-                    from: 50,
-                    to: 100,
+                translateY: {
+                    from: -20,
+                    to: -50,
                     unit: "%"
                 },
                 opacity: {
                     from: 1,
                     to: 0,
+                }
+            }
+        }
+    });
+    
+    Motus.addAnimation(animation);
+});
+
+[].forEach.call(document.getElementsByClassName('speed-150'), function (el) {
+
+    var animation = new Motus.Animation({
+        $el: el,
+        keyframes: {
+            100: {
+                translateY: {
+                    from: 150,
+                    to: -150,
+                    unit: "%"
                 },
-            },
+            }
+        }
+    });
+    
+    Motus.addAnimation(animation);
+});
+
+[].forEach.call(document.getElementsByClassName('speed-200'), function (el) {
+
+    var animation = new Motus.Animation({
+        $el: el,
+        keyframes: {
+            100: {
+                translateY: {
+                    from: 200,
+                    to: -200,
+                    unit: "%"
+                },
+            }
+        }
+    });
+    
+    Motus.addAnimation(animation);
+});
+
+[].forEach.call(document.getElementsByClassName('bg-size'), function (el) {
+
+    var animation = new Motus.Animation({
+        $el: el,
+        keyframes: {
+            100: {
+                backgroundPositionY: {
+                    from: 0,
+                    to: 50,
+                    unit: "%"
+                }
+            }
         }
     });
     
@@ -197,58 +258,7 @@ $(function() {
 	});
 });
 
-var isScrolling = false;
+$(window).on('load', function() {
 
-window.addEventListener("scroll", throttleScroll, false);
-
-function throttleScroll(e)
-{
-    if (isScrolling == false)
-    {
-        window.requestAnimationFrame(function() {
-
-            dealWithScrolling(e);
-
-            isScrolling = false;
-        });
-    }
-
-    isScrolling = true;
-}
-
-function dealWithScrolling(e)
-{
-    [].forEach.call(document.getElementsByClassName('animate-elem'), function (el) {
-        
-        if (isFullyVisible(el))
-        {
-            el.classList.add('animate-active');
-        }
-
-        if (!isPartiallyVisible(el))
-        {
-            el.classList.remove('animate-active');
-        }
-    });
-}
-
-function isPartiallyVisible(el)
-{
-    var elementBoundary = el.getBoundingClientRect();
-
-    var top = elementBoundary.top;
-    var bottom = elementBoundary.bottom;
-    var height = elementBoundary.height;
-
-    return ((top + height >= 0) && (height + window.innerHeight >= bottom));
-}
-
-function isFullyVisible(el)
-{
-    var elementBoundary = el.getBoundingClientRect();
-   
-    var top = elementBoundary.top;
-    var bottom = elementBoundary.bottom;
-   
-    return ((top >= 0) && (bottom <= window.innerHeight));
-}
+    $('.block-start__block').addClass('block-start__block_show');
+});

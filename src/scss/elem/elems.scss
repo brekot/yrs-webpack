@@ -20,11 +20,13 @@
     overflow: hidden;
 }
 
-
-.animate-elem {
-    transition: 3s;
+.speed-50,
+.speed-100,
+.speed-150 {
+    z-index: 10;
+    transition: .1s;
 }
-.animate-elem:not(.animate-active) {
-    transform: translate(-100%, 0);
-    opacity: 0;
+
+.bg-size {
+    transition: .1s;
 }

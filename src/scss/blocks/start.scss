@@ -1,9 +1,32 @@
 .block-start {
     text-align: center;
-    padding: 247px 0 222px;
     background: var(--bg-grey) url(img/bg.start.jpg) no-repeat top/cover;
     position: relative;
 
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: var(--black);
+        z-index: 2;
+        opacity: .8;
+    }
+    &__video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        transform: translate(-50%,-50%);
+        min-height: 100%;
+    }
+    &__block {
+        position: relative;
+        z-index: 3;
+        padding: 247px 0 222px;
+    }
     &__title {
         font-size: 144px;
         line-height: 115px;
@@ -99,9 +122,11 @@
     @media (max-width:991px)
     {
         & {
-            padding: 136px 0 0;
             height: 667px;
 
+            &__block {
+                padding: 136px 0 0;
+            }
             &__title {
                 font-size: 54px;
                 line-height: 58px;

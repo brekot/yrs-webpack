@@ -154,7 +154,8 @@
             &__block {
                 top: -39px;
                 width: 100%;
-                margin: 0 0 165px;
+                margin: 0;
+                transform: translate(-50%, 0);
             }
             &__sub {
                 margin: -12px auto 21px;

@@ -7,141 +7,6 @@ require('motus');
 
 $(function() {
 
-    [].forEach.call(document.getElementsByClassName('opacity-set'), function (el) {
-
-        var animation = new Motus.Animation({
-            $el: el,
-            keyframes: {
-                30: {
-                    opacity: {
-                        from: 0,
-                        to: 1,
-                    }
-                },
-                70: {
-                    opacity: {
-                        from: 1,
-                        to: 1,
-                    }
-                },
-                100: {
-                    opacity: {
-                        from: 1,
-                        to: 0,
-                    }
-                },
-            }
-        });
-        
-        Motus.addAnimation(animation);
-    });
-
-    [].forEach.call(document.getElementsByClassName('speed-50'), function (el) {
-
-        var animation = new Motus.Animation({
-            $el: el,
-            keyframes: {
-                30: {
-                    translateY: {
-                        from: 50,
-                        to: 30,
-                        unit: "%"
-                    },
-                    opacity: {
-                        from: 0,
-                        to: 1,
-                    }
-                },
-                80: {
-                    translateY: {
-                        from: 30,
-                        to: 0,
-                        unit: "%"
-                    },
-                    opacity: {
-                        from: 1,
-                        to: 1,
-                    }
-                },
-                100: {
-                    translateY: {
-                        from: 0,
-                        to: -20,
-                        unit: "%"
-                    },
-                    opacity: {
-                        from: 1,
-                        to: 0,
-                    }
-                },
-            }
-        });
-        
-        Motus.addAnimation(animation);
-    });
-
-    [].forEach.call(document.getElementsByClassName('speed-100'), function (el) {
-    
-        var animation = new Motus.Animation({
-            $el: el,
-            keyframes: {
-                30: {
-                    translateY: {
-                        from: 30,
-                        to: 0,
-                        unit: "%"
-                    },
-                    opacity: {
-                        from: 0,
-                        to: 1,
-                    }
-                },
-                80: {
-                    translateY: {
-                        from: 0,
-                        to: -20,
-                        unit: "%"
-                    },
-                    opacity: {
-                        from: 1,
-                        to: 1,
-                    }
-                },
-                100: {
-                    translateY: {
-                        from: -20,
-                        to: -50,
-                        unit: "%"
-                    },
-                    opacity: {
-                        from: 1,
-                        to: 0,
-                    }
-                }
-            }
-        });
-        
-        Motus.addAnimation(animation);
-    });
-
-    [].forEach.call(document.getElementsByClassName('bg-position'), function (el) {
-    
-        var animation = new Motus.Animation({
-            $el: el,
-            keyframes: {
-                100: {
-                    backgroundPositionY: {
-                        from: 0,
-                        to: 50,
-                        unit: "%"
-                    }
-                }
-            }
-        });
-        
-        Motus.addAnimation(animation);
-    });
-
     var lastId,
         topMenu = $(".main-nav"),
         topMenuHeight = topMenu.outerHeight()+15,
@@ -251,9 +116,207 @@ $(function() {
 	});
 });
 
-$(window).on('load', function() {
+window.addEventListener("load", function() {
 
-    $('.block-start__block').addClass('block-start__block_show');
+    document.querySelector('.block-start__block').classList.add('block-start__block_show');
+
+    if (window.innerWidth > 991)
+    {
+        [].forEach.call(document.getElementsByClassName('speed-50'), function (el) {
+
+            var animation = new Motus.Animation({
+                $el: el,
+                keyframes: {
+                    30: {
+                        translateY: {
+                            from: 50,
+                            to: 30,
+                            unit: "%"
+                        },
+                        opacity: {
+                            from: 0,
+                            to: 1,
+                        }
+                    },
+                    80: {
+                        translateY: {
+                            from: 30,
+                            to: 0,
+                            unit: "%"
+                        },
+                        opacity: {
+                            from: 1,
+                            to: 1,
+                        }
+                    },
+                    100: {
+                        translateY: {
+                            from: 0,
+                            to: -20,
+                            unit: "%"
+                        },
+                        opacity: {
+                            from: 1,
+                            to: 0,
+                        }
+                    },
+                }
+            });
+            
+            Motus.addAnimation(animation);
+        });
+    
+        [].forEach.call(document.getElementsByClassName('speed-100'), function (el) {
+        
+            var animation = new Motus.Animation({
+                $el: el,
+                keyframes: {
+                    30: {
+                        translateY: {
+                            from: 30,
+                            to: 0,
+                            unit: "%"
+                        },
+                        opacity: {
+                            from: 0,
+                            to: 1,
+                        }
+                    },
+                    80: {
+                        translateY: {
+                            from: 0,
+                            to: -20,
+                            unit: "%"
+                        },
+                        opacity: {
+                            from: 1,
+                            to: 1,
+                        }
+                    },
+                    100: {
+                        translateY: {
+                            from: -20,
+                            to: -50,
+                            unit: "%"
+                        },
+                        opacity: {
+                            from: 1,
+                            to: 0,
+                        }
+                    }
+                }
+            });
+            
+            Motus.addAnimation(animation);
+        });
+    }
+    else
+    {
+        [].forEach.call(document.getElementsByClassName('speed-50'), function (el) {
+
+            var animation = new Motus.Animation({
+                $el: el,
+                keyframes: {
+                    30: {
+                        opacity: {
+                            from: 0,
+                            to: 1,
+                        }
+                    },
+                    70: {
+                        opacity: {
+                            from: 1,
+                            to: 1,
+                        }
+                    },
+                    100: {
+                        opacity: {
+                            from: 1,
+                            to: 0,
+                        }
+                    },
+                }
+            });
+            
+            Motus.addAnimation(animation);
+        });
+
+        [].forEach.call(document.getElementsByClassName('speed-100'), function (el) {
+
+            var animation = new Motus.Animation({
+                $el: el,
+                keyframes: {
+                    30: {
+                        opacity: {
+                            from: 0,
+                            to: 1,
+                        }
+                    },
+                    70: {
+                        opacity: {
+                            from: 1,
+                            to: 1,
+                        }
+                    },
+                    100: {
+                        opacity: {
+                            from: 1,
+                            to: 0,
+                        }
+                    },
+                }
+            });
+            
+            Motus.addAnimation(animation);
+        });
+    }
+
+    [].forEach.call(document.getElementsByClassName('opacity-set'), function (el) {
+
+        var animation = new Motus.Animation({
+            $el: el,
+            keyframes: {
+                30: {
+                    opacity: {
+                        from: 0,
+                        to: 1,
+                    }
+                },
+                70: {
+                    opacity: {
+                        from: 1,
+                        to: 1,
+                    }
+                },
+                100: {
+                    opacity: {
+                        from: 1,
+                        to: 0,
+                    }
+                },
+            }
+        });
+        
+        Motus.addAnimation(animation);
+    });
+
+    [].forEach.call(document.getElementsByClassName('bg-position'), function (el) {
+    
+        var animation = new Motus.Animation({
+            $el: el,
+            keyframes: {
+                100: {
+                    backgroundPositionY: {
+                        from: 0,
+                        to: 50,
+                        unit: "%"
+                    }
+                }
+            }
+        });
+        
+        Motus.addAnimation(animation);
+    });
 });
 
 var isScrolling = false;

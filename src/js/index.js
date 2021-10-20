@@ -18,14 +18,13 @@ $(function() {
 
     menuItems.on('click', function(e){
 
-        var href = $(this).attr("href"),
-            offsetTop = href === "#" ? 0 : $(href).offset().top + 1;
+        $('.main-nav').removeClass('main-nav_open');
 
         $('html, body').stop().animate({ 
-            scrollTop: offsetTop
+            scrollTop: $($(this).attr("href")).offset().top + 1
         }, 1000);
 
-        $('.main-nav').removeClass('main-nav_open');
+        $('body').removeClass('overflow-hidden');
 
         e.preventDefault();
     });

@@ -31,7 +31,7 @@
         bottom: 25px;
         width: 825px;
         left: 50%;
-        transform: translate(-50%, 0);
+        margin: 0 0 0 -412px;
     }
     &__name {
         font-size: 32px;
@@ -46,9 +46,8 @@
         &1 {
             position: absolute;
             left: 50%;
-            transform: translate(-50%, 0);
             top: -38px;
-            margin: 0 0 0 -30px;
+            margin: 0 0 0 -305px;
         }
         &2 {
             position: absolute;
@@ -62,9 +61,13 @@
         display: flex;
         align-items: center;
         position: relative;
+        background-color: var(--red);
 
-        &__img {
+        &__pict {
             width: 50%;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
         }
         &__sep {
             width: 65px;

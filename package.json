@@ -8,9 +8,8 @@
 		"build": "webpack --mode production && prettier --print-width=240 --tab-width=4 --parser html --write docs/*.html"
 	},
 	"dependencies": {
-		"aos": "^2.3.4",
 		"jquery": "^3.6.0",
-		"locomotive-scroll": "^4.1.2"
+		"motus": "^2.0.5"
 	},
 	"devDependencies": {
 		"clean-webpack-plugin": "^2.0.1",

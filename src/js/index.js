@@ -241,28 +241,43 @@ window.addEventListener("load", function() {
         });
 
         [].forEach.call(document.getElementsByClassName('speed-100'), function (el) {
-
+        
             var animation = new Motus.Animation({
                 $el: el,
                 keyframes: {
                     30: {
+                        translateY: {
+                            from: 30,
+                            to: 0,
+                            unit: "%"
+                        },
                         opacity: {
                             from: 0,
                             to: 1,
                         }
                     },
-                    70: {
+                    80: {
+                        translateY: {
+                            from: 0,
+                            to: -20,
+                            unit: "%"
+                        },
                         opacity: {
                             from: 1,
                             to: 1,
                         }
                     },
                     100: {
+                        translateY: {
+                            from: -20,
+                            to: -50,
+                            unit: "%"
+                        },
                         opacity: {
                             from: 1,
                             to: 0,
                         }
-                    },
+                    }
                 }
             });
             

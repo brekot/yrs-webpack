@@ -209,8 +209,8 @@
                     margin: 0;
                     max-width: 200%;
                     height: 280px;
-                    left: 50%;
-                    transform: translate(-50%, 0);
+                    left: 0;
+                    right: 0;
                     display: block;
                 }
             }
@@ -227,6 +227,13 @@
             height: auto;
             max-height: 1000%;
             max-width: 1000%;
+        }
+    }
+    @media (min-width:768px) AND (max-width:991px)
+    {
+        &__img4 {
+            left: 50%;
+            margin: 0 0 0 -224px;
         }
     }
 }

@@ -164,16 +164,18 @@ window.addEventListener("load", function() {
             
             Motus.addAnimation(animation);
         });
-    
-        [].forEach.call(document.getElementsByClassName('speed-100'), function (el) {
-        
+    }
+    else
+    {
+        [].forEach.call(document.getElementsByClassName('mobile-speed-50'), function (el) {
+
             var animation = new Motus.Animation({
                 $el: el,
                 keyframes: {
                     30: {
-                        translateY: {
-                            from: 30,
-                            to: 0,
+                        top: {
+                            from: 10,
+                            to: 5,
                             unit: "%"
                         },
                         opacity: {
@@ -181,10 +183,10 @@ window.addEventListener("load", function() {
                             to: 1,
                         }
                     },
-                    80: {
-                        translateY: {
-                            from: 0,
-                            to: -20,
+                    70: {
+                        top: {
+                            from: 5,
+                            to: -10,
                             unit: "%"
                         },
                         opacity: {
@@ -193,25 +195,23 @@ window.addEventListener("load", function() {
                         }
                     },
                     100: {
-                        translateY: {
-                            from: -20,
-                            to: -50,
+                        top: {
+                            from: -10,
+                            to: -15,
                             unit: "%"
                         },
                         opacity: {
                             from: 1,
                             to: 0,
                         }
-                    }
+                    },
                 }
             });
             
             Motus.addAnimation(animation);
         });
-    }
-    else
-    {
-        [].forEach.call(document.getElementsByClassName('speed-50'), function (el) {
+
+        [].forEach.call(document.getElementsByClassName('mobile-opacity'), function (el) {
 
             var animation = new Motus.Animation({
                 $el: el,
@@ -239,51 +239,51 @@ window.addEventListener("load", function() {
             
             Motus.addAnimation(animation);
         });
+    }
 
-        [].forEach.call(document.getElementsByClassName('speed-100'), function (el) {
+    [].forEach.call(document.getElementsByClassName('speed-100'), function (el) {
         
-            var animation = new Motus.Animation({
-                $el: el,
-                keyframes: {
-                    30: {
-                        translateY: {
-                            from: 30,
-                            to: 0,
-                            unit: "%"
-                        },
-                        opacity: {
-                            from: 0,
-                            to: 1,
-                        }
+        var animation = new Motus.Animation({
+            $el: el,
+            keyframes: {
+                30: {
+                    translateY: {
+                        from: 30,
+                        to: 0,
+                        unit: "%"
                     },
-                    80: {
-                        translateY: {
-                            from: 0,
-                            to: -20,
-                            unit: "%"
-                        },
-                        opacity: {
-                            from: 1,
-                            to: 1,
-                        }
+                    opacity: {
+                        from: 0,
+                        to: 1,
+                    }
+                },
+                80: {
+                    translateY: {
+                        from: 0,
+                        to: -20,
+                        unit: "%"
                     },
-                    100: {
-                        translateY: {
-                            from: -20,
-                            to: -50,
-                            unit: "%"
-                        },
-                        opacity: {
-                            from: 1,
-                            to: 0,
-                        }
+                    opacity: {
+                        from: 1,
+                        to: 1,
+                    }
+                },
+                100: {
+                    translateY: {
+                        from: -20,
+                        to: -50,
+                        unit: "%"
+                    },
+                    opacity: {
+                        from: 1,
+                        to: 0,
                     }
                 }
-            });
-            
-            Motus.addAnimation(animation);
+            }
         });
-    }
+        
+        Motus.addAnimation(animation);
+    });
 
     [].forEach.call(document.getElementsByClassName('opacity-set'), function (el) {
 

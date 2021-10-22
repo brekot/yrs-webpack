@@ -22,7 +22,8 @@
 
 .speed-50,
 .speed-100,
-.speed-150 {
+.speed-150,
+.mobile-speed-50 {
     z-index: 10;
     transition: .1s;
     opacity: 0;
@@ -31,6 +32,13 @@
 .bg-size,
 .opacity-set {
     transition: .1s;
+}
+
+@media (max-width:991px)
+{
+    .mobile-opacity {
+        opacity: 1;
+    }
 }
 
 .transform-rotate {

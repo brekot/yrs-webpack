@@ -1,6 +1,6 @@
 import $ from "jquery";
-import cssVars from "./lib/css.vars.js";
 import b from "./lib/svgxuse.js";
+import cssVars from 'css-vars-ponyfill';
 
 cssVars();
 

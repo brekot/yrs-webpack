@@ -8,6 +8,7 @@
 		"build": "webpack --mode production && prettier --print-width=240 --tab-width=4 --parser html --write docs/*.html"
 	},
 	"dependencies": {
+		"css-vars-ponyfill": "^2.4.7",
 		"jquery": "^3.6.0",
 		"motus": "^2.0.5"
 	},

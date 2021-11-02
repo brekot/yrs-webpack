@@ -1,21 +1,21 @@
 /* if IE */
 /* if (document.body.style.msTextCombineHorizontal !== undefined)
 { */
-    var sections = document.querySelectorAll('.speed-50');
+    var sections = document.getElementsByClassName('speed-50');
 
     for (var i = 0; i < sections.length; i++){
     
         sections[i].classList.remove('speed-50');
     }
     
-    var sections = document.querySelectorAll('.speed-100');
+    var sections = document.getElementsByClassName('speed-100');
     
     for (i = 0; i < sections.length; i++){
     
         sections[i].classList.remove('speed-100');
     }
     
-    var sections = document.querySelectorAll('.speed-150');
+    var sections = document.getElementsByClassName('speed-150');
     
     for (i = 0; i < sections.length; i++){
     

@@ -9,6 +9,13 @@ window.$ = $;
 
 require('motus');
 
+/* if IE */
+if (document.body.style.msTextCombineHorizontal !== undefined)
+{
+    alert('123123123');
+    alert($('#id10'))
+}
+
 $(function() {
 
     var lastId,
@@ -391,4 +398,4 @@ function isFullyVisible(el)
     var bottom = elementBoundary.bottom;
 
     return ((top >= 0) && (bottom <= window.innerHeight));
-} 
+}

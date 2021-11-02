@@ -1,4 +1,8 @@
 import $ from "jquery";
+import cssVars from "./lib/css.vars.js";
+import b from "./lib/svgxuse.js";
+
+cssVars();
 
 window.jQuery = $;
 window.$ = $;

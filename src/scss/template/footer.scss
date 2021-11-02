@@ -19,8 +19,14 @@
         justify-content: center;
     }
     &__logo {
-        height: 60px;
+        display: flex;
         margin: 0 5px;
+        align-items: center;
+        justify-content: center;
+
+        &-img {
+            height: 60px;
+        }
     }
 
     @media (max-width:991px)

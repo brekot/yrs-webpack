@@ -1,3 +1,28 @@
+/* if IE */
+if (document.body.style.msTextCombineHorizontal !== undefined)
+{
+    var sections = document.querySelectorAll('.speed-50');
+
+    for (var i = 0; i < sections.length; i++){
+    
+        sections[i].classList.remove('speed-50');
+    }
+    
+    var sections = document.querySelectorAll('.speed-100');
+    
+    for (i = 0; i < sections.length; i++){
+    
+        sections[i].classList.remove('speed-100');
+    }
+    
+    var sections = document.querySelectorAll('.speed-150');
+    
+    for (i = 0; i < sections.length; i++){
+    
+        sections[i].classList.remove('speed-150');
+    }
+}
+
 import $ from "jquery";
 import b from "./lib/svgxuse.js";
 import cssVars from 'css-vars-ponyfill';
@@ -8,13 +33,6 @@ window.jQuery = $;
 window.$ = $;
 
 require('motus');
-
-/* if IE */
-if (document.body.style.msTextCombineHorizontal !== undefined)
-{
-    alert('123123123');
-    alert($('#id10'))
-}
 
 $(function() {
 

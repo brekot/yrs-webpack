@@ -1,6 +1,6 @@
 /* if IE */
-if (document.body.style.msTextCombineHorizontal !== undefined)
-{
+/* if (document.body.style.msTextCombineHorizontal !== undefined)
+{ */
     var sections = document.querySelectorAll('.speed-50');
 
     for (var i = 0; i < sections.length; i++){
@@ -21,7 +21,7 @@ if (document.body.style.msTextCombineHorizontal !== undefined)
     
         sections[i].classList.remove('speed-150');
     }
-}
+/* } */
 
 import $ from "jquery";
 import b from "./lib/svgxuse.js";

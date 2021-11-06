@@ -1,14 +1,24 @@
 @font-face {
-    font-family: 'Beltheder';
-    font-style: normal;
-    font-weight: 400;
+	font-family: 'Montserrat';
+	src: url('./fonts/Montserrat.eot');
+	src: local('Montserrat'),
+         url('./fonts/Montserrat.woff') format('woff'),
+         url('./fonts/Montserrat.ttf') format('truetype'),
+         url('./fonts/Montserrat.svg') format('svg'),
+         url('./fonts/Montserrat.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
     font-display: swap;
-    src: local('Beltheder'), url('./fonts/Beltheder.woff2') format('woff2');
 }
 @font-face {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
+	font-family: 'Beltheder';
+	src: url('./fonts/Beltheder.eot');
+	src: local('Beltheder'),
+         url('./fonts/Beltheder.woff') format('woff'),
+         url('./fonts/Beltheder.ttf') format('truetype'),
+         url('./fonts/Beltheder.svg') format('svg'),
+         url('./fonts/Beltheder.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
     font-display: swap;
-    src: local('Montserrat'), url('./fonts/Montserrat.woff2') format('woff2');
 }

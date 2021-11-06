@@ -12,6 +12,26 @@
     <meta property="og:site_name" content="75 ЛЕТ ВЕЛИКОЙ ИСТОРИИ"/>
     <meta property="og:image" content="./local/img/bg.start.jpg"/>
 
+    <script>
+        function isInternetExplorer()
+        {
+            return window.navigator.userAgent.indexOf('MSIE ') > -1 || window.navigator.userAgent.indexOf('Trident/') > -1;
+        }
+
+        if (isInternetExplorer())
+        {
+            var script = document.createElement('script');
+            script.src = "./local/js-ie/css.vars.min.js";
+            document.head.insertBefore(script, document.head.firstChild);
+            script = document.createElement('script');
+            script.src = "./local/js-ie/svgxuse.min.js";
+            document.head.insertBefore(script, document.head.firstChild);
+            window.onload = function() {
+                document.body.classList.add("ie");
+            }
+        }
+    </script>
+
 </head>
 <body>
     <div class="wrapper">

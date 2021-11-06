@@ -12,8 +12,26 @@
         <meta property="og:site_name" content="75 ЛЕТ ВЕЛИКОЙ ИСТОРИИ" />
         <meta property="og:image" content="./local/img/bg.start.jpg" />
 
+        <script>
+            function isInternetExplorer() {
+                return window.navigator.userAgent.indexOf("MSIE ") > -1 || window.navigator.userAgent.indexOf("Trident/") > -1;
+            }
+
+            if (isInternetExplorer()) {
+                var script = document.createElement("script");
+                script.src = "./local/js-ie/css.vars.min.js";
+                document.head.insertBefore(script, document.head.firstChild);
+                script = document.createElement("script");
+                script.src = "./local/js-ie/svgxuse.min.js";
+                document.head.insertBefore(script, document.head.firstChild);
+                window.onload = function() {
+                    document.body.classList.add("ie");
+                };
+            }
+        </script>
+
         <link rel="shortcut icon" href="favicon.ico" />
-        <link href="./local/styles.css?f971d6f061d34bc740bc" rel="stylesheet" />
+        <link href="./local/styles.css?27dd25263fe477dc38c3" rel="stylesheet" />
     </head>
 
     <body>
@@ -669,6 +687,6 @@
                 </div>
             </footer>
         </div>
-        <script type="text/javascript" src="./local/js/script.js?f971d6f061d34bc740bc"></script>
+        <script type="text/javascript" src="./local/js/script.js?27dd25263fe477dc38c3"></script>
     </body>
 </html>

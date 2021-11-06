@@ -1,0 +1,37 @@
+.ie .speed-50,
+.ie .speed-100,
+.ie .speed-150,
+.ie .mobile-speed-50 {
+    opacity: 1 !important;
+}
+.ie .date-block__date {
+    color: inherit;
+    position: relative;
+    top: -55px;
+}
+.ie .block-start__title {
+    color: inherit;
+    transform: none;
+}
+.ie .block-start__block {
+    opacity: 1 !important;
+}
+.ie .block-start__text {
+    transform: none;
+}
+.ie .block-20__title {
+    color: inherit;
+}
+.ie .block-80-face__item {
+    transform: none !important;
+    opacity: 1 !important;
+}
+.ie .block-50__top-date,
+.ie .block-80__date,
+.ie .block-00__date,
+.ie .block-10__date {
+    color: var(--red);
+}
+.ie .block-70__date {
+    color: var(--black);
+}

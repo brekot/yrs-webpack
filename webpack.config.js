@@ -113,6 +113,10 @@ const config = {
             {
                 from: "./src/video",
                 to: "./local/video"
+            },
+            {
+                from: "./src/js-ie",
+                to: "./local/js-ie"
             }
         ])
     ].concat(htmlPlugins)
